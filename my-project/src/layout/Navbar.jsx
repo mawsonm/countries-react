@@ -4,10 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon as faMoonSolid } from "@fortawesome/free-solid-svg-icons";
 import { faMoon as faMoonRegular } from "@fortawesome/free-regular-svg-icons";
 
-const Navbar = () => {
-  const ctx = useContext(ThemeContext);
+const Navbar = (props) => {
+  const ctx = props.ctx;
   const colors = ctx.theme.colors;
-  console.log(colors);
 
   const switchThemeHandler = () => {
     console.log("in theme handler");

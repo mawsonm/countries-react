@@ -9,6 +9,7 @@ const darkColors = {
   text: "text-[#ffffff]",
   elements: "bg-[#2b3945]",
   background: "bg-[#202c37]",
+  placeholder: "placeholder:text-[#ffffff]",
 };
 
 const darkTheme = {
@@ -20,6 +21,7 @@ const lightColors = {
   text: "text-[#111517]",
   elements: "bg-[#ffffff]",
   background: "bg-[#fafafa]",
+  placeholder: "placeholder:text-[#60686b]",
 };
 
 const lightTheme = {
