@@ -6,7 +6,12 @@ const HomeGrid = (props) => {
       className={`grid grid-cols-4 gap-12 ${props.colors.colors.background}`}
     >
       {props.countries.map((country, index) => (
-        <CountryCard country={country} key={index} colors={props.colors} />
+        <CountryCard
+          country={country}
+          key={index}
+          colors={props.colors}
+          countryMap={props.countryMap}
+        />
       ))}
     </div>
   );

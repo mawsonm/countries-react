@@ -1,7 +1,15 @@
+import { useNavigate } from "react-router-dom";
+
 const CountryCard = (props) => {
+  const navigate = useNavigate();
   return (
     <div
-      className={`${props.colors.colors.elements} flex gap-4 flex-col rounded w-[320px] drop-shadow-lg`}
+      onClick={() =>
+        navigate(`/${props.country.cca3}`, {
+          state: { country: props.country, countryMap: props.countryMap },
+        })
+      }
+      className={`${props.colors.colors.elements} flex gap-4 flex-col rounded w-[320px] drop-shadow-lg cursor-pointer transition-transform hover:translate-y-2`}
     >
       <div className="h-[160px]">
         <img
