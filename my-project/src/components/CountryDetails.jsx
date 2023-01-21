@@ -43,8 +43,11 @@ const CountryDetails = (props) => {
   if (country.currencies) {
     currencies = transformObj(Object.keys(country.currencies), true);
   }
-  const nativeName =
-    country.name.nativeName[Object.keys(country.name.nativeName)[0]].common;
+  let nativeName = "N/A";
+  if (country.name.nativeName) {
+    nativeName =
+      country.name.nativeName[Object.keys(country.name.nativeName)[0]].common;
+  }
 
   return (
     <div className="grid lg:grid-cols-2 gap-8 ">
@@ -108,7 +111,7 @@ const CountryDetails = (props) => {
                 }`}
               >
                 {" "}
-                {country.subregion}
+                {country.subregion ? country.subregion : "N/A"}
               </span>
             </div>
             <div>

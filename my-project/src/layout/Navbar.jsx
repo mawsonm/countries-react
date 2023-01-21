@@ -9,7 +9,6 @@ const Navbar = (props) => {
   const colors = ctx.theme.colors;
 
   const switchThemeHandler = () => {
-    console.log("in theme handler");
     ctx.theme.isDark
       ? ctx.setTheme({ type: "LIGHT" })
       : ctx.setTheme({ type: "DARK" });

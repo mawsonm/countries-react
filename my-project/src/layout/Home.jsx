@@ -9,7 +9,6 @@ const Home = (props) => {
   const [selectedRegion, selectRegion] = useState("");
 
   const parseData = (data) => {
-    console.log(data);
     setCountries(data);
   };
 
@@ -32,7 +31,6 @@ const Home = (props) => {
   );
 
   const regions = [...new Set(countries.map((country) => country.region))];
-  console.log(regions);
 
   let countryAbreviationMap = new Map();
   countries.forEach((item) => {
@@ -41,11 +39,11 @@ const Home = (props) => {
 
   return (
     <div
-      className={`${props.colors.colors.background} min-h-[calc(100vh-92px)] sm:px-16 px-4`}
+      className={`${props.theme.colors.background} min-h-[calc(100vh-92px)] sm:px-16 px-4`}
     >
       <div className="max-w-1280px container mx-auto ">
         <HomeHeader
-          colors={props.colors}
+          theme={props.theme}
           selectRegion={selectRegion}
           selectedRegion={selectedRegion}
           setNameFilter={setNameFilter}
@@ -53,7 +51,7 @@ const Home = (props) => {
           regions={regions}
         />
         <HomeGrid
-          colors={props.colors}
+          theme={props.theme}
           countries={filteredCountries}
           countryMap={countryAbreviationMap}
         />

@@ -12,7 +12,7 @@ function App() {
     <>
       <Navbar ctx={ctx} />
       <Routes>
-        <Route path="/" element={<Home colors={ctx.theme} />} />
+        <Route path="/" element={<Home theme={ctx.theme} />} />
         <Route path="/:name" element={<Country theme={ctx.theme} />} />
       </Routes>
     </>

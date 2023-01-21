@@ -17,20 +17,20 @@ const HomeHeader = (props) => {
       <div className="relative sm:w-96 w-80">
         <input
           onChange={changeSearch}
-          className={`${props.colors.colors.elements} ${props.colors.colors.text} focus:outline-none rounded py-4 px-16 ${props.colors.colors.placeholder} sm:w-96 w-80`}
+          className={`${props.theme.colors.elements} ${props.theme.colors.text} focus:outline-none rounded py-4 px-16 ${props.theme.colors.placeholder} sm:w-96 w-80`}
           placeholder="Search for a country..."
         />
         <FontAwesomeIcon
           className="absolute left-6 top-5"
           icon={faMagnifyingGlass}
-          color={props.colors.isDark ? "white" : "grey"}
+          color={props.theme.isDark ? "white" : "grey"}
         />
       </div>
       <div className="relative">
         <select
           value={props.selectedRegion}
           onChange={changeRegion}
-          className={`${props.colors.colors.elements} ${props.colors.colors.text} font-semibold focus:outline-none px-6 py-4 rounded w-56 appearance-none`}
+          className={`${props.theme.colors.elements} ${props.theme.colors.text} font-semibold focus:outline-none px-6 py-4 rounded w-56 appearance-none`}
         >
           <option value="" key={0} className="font-semibold">
             Filter by Region
@@ -44,7 +44,7 @@ const HomeHeader = (props) => {
         <FontAwesomeIcon
           className="absolute right-6 top-5"
           icon={faAngleDown}
-          color={props.colors.isDark ? "white" : "grey"}
+          color={props.theme.isDark ? "white" : "grey"}
         />
       </div>
     </div>
