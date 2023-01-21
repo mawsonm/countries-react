@@ -41,7 +41,7 @@ const Home = (props) => {
 
   return (
     <div
-      className={`${props.colors.colors.background} min-h-[calc(100vh-92px)] px-16`}
+      className={`${props.colors.colors.background} min-h-[calc(100vh-92px)] sm:px-16 px-4`}
     >
       <div className="max-w-1280px container mx-auto ">
         <HomeHeader

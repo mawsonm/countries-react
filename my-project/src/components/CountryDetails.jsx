@@ -184,7 +184,7 @@ const CountryDetails = (props) => {
                         },
                       })
                     }
-                    className={`rounded w-[110px] py-1 flex place-content-center items-center drop-shadow-lg ${props.theme.colors.elements} cursor-pointer transition-transform hover:translate-y-1 `}
+                    className={`rounded w-[110px] py-1 flex place-content-center items-center drop-shadow-lg ${props.theme.colors.elements} cursor-pointer xl:transition-transform xl:hover:translate-y-1 `}
                   >
                     <span className={`${props.theme.colors.text} text-center`}>
                       {countryMap.get(border).name.common}

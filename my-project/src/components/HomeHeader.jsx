@@ -13,7 +13,7 @@ const HomeHeader = (props) => {
   };
 
   return (
-    <div className="flex sm:flex-row flex-col justify-between gap-12 sm:items-center items-start py-16 sm:w-full w-80 mx-auto">
+    <div className="flex sm:flex-row flex-col justify-between gap-12 sm:items-center items-start py-16 sm:w-96 w-80 mx-auto">
       <div className="relative sm:w-96 w-80">
         <input
           onChange={changeSearch}

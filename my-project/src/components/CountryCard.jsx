@@ -9,7 +9,7 @@ const CountryCard = (props) => {
           state: { country: props.country, countryMap: props.countryMap },
         })
       }
-      className={`${props.colors.colors.elements} flex gap-4 flex-col rounded w-[320px] drop-shadow-lg cursor-pointer transition-transform hover:translate-y-2`}
+      className={`${props.colors.colors.elements} flex gap-4 flex-col rounded w-[320px] drop-shadow-lg cursor-pointer xl:transition-transform xl:hover:translate-y-2`}
     >
       <div className="h-[160px]">
         <img
