@@ -13,11 +13,11 @@ const HomeHeader = (props) => {
   };
 
   return (
-    <div className="flex justify-between items-center flex-wrap py-16">
-      <div className="relative w-96">
+    <div className="flex sm:flex-row flex-col justify-between gap-12 sm:items-center items-start py-16 sm:w-full w-80 mx-auto">
+      <div className="relative sm:w-96 w-80">
         <input
           onChange={changeSearch}
-          className={`${props.colors.colors.elements} ${props.colors.colors.text} focus:outline-none rounded py-4 px-16 ${props.colors.colors.placeholder} w-96`}
+          className={`${props.colors.colors.elements} ${props.colors.colors.text} focus:outline-none rounded py-4 px-16 ${props.colors.colors.placeholder} sm:w-96 w-80`}
           placeholder="Search for a country..."
         />
         <FontAwesomeIcon

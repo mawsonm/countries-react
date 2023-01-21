@@ -3,7 +3,7 @@ import CountryCard from "./CountryCard";
 const HomeGrid = (props) => {
   return (
     <div
-      className={`grid grid-cols-4 gap-12 ${props.colors.colors.background}`}
+      className={`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-12 place-items-center ${props.colors.colors.background}`}
     >
       {props.countries.map((country, index) => (
         <CountryCard

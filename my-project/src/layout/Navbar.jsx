@@ -17,7 +17,7 @@ const Navbar = (props) => {
 
   return (
     <nav
-      className={`w-full flex justify-between items-center navbar px-16 py-8 ${colors.elements} drop-shadow-md transition-colors`}
+      className={`w-full flex justify-between items-center navbar sm:px-16 px-4 py-8 ${colors.elements} drop-shadow-md transition-colors`}
     >
       <h1 className={`${colors.text} font-extrabold text-xl`}>
         Where in the world?

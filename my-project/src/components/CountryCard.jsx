@@ -59,7 +59,9 @@ const CountryCard = (props) => {
               className={`${
                 props.colors.isDark ? "text-[#c0c0c0]" : "text-[#808080]"
               } text-[16px]`}
-            >{`   ${props.country.capital}`}</span>
+            >{`   ${
+              props.country.capital ? props.country.capital : "N/A"
+            }`}</span>
           </div>
         </div>
       </div>
