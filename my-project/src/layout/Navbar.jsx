@@ -16,23 +16,25 @@ const Navbar = (props) => {
   };
 
   return (
-    <nav
-      className={`w-full flex justify-between items-center navbar sm:px-16 px-4 py-8 ${colors.elements} drop-shadow-md transition-colors`}
-    >
-      <h1 className={`${colors.text} font-extrabold text-xl`}>
-        Where in the world?
-      </h1>
-      <div
-        onClick={switchThemeHandler}
-        className="flex gap-4 items-center cursor-pointer"
+    <header>
+      <nav
+        className={`w-full flex justify-between items-center navbar sm:px-16 px-4 py-8 ${colors.elements} drop-shadow-md transition-colors`}
       >
-        <FontAwesomeIcon
-          icon={ctx.theme.isDark ? faMoonSolid : faMoonRegular}
-          color={ctx.theme.isDark ? "white" : null}
-        />
-        <span className={`${colors.text} font-semibold`}>Dark Mode</span>
-      </div>
-    </nav>
+        <h1 className={`${colors.text} font-extrabold text-xl`}>
+          Where in the world?
+        </h1>
+        <div
+          onClick={switchThemeHandler}
+          className="flex gap-4 items-center cursor-pointer"
+        >
+          <FontAwesomeIcon
+            icon={ctx.theme.isDark ? faMoonSolid : faMoonRegular}
+            color={ctx.theme.isDark ? "white" : null}
+          />
+          <span className={`${colors.text} font-semibold`}>Dark Mode</span>
+        </div>
+      </nav>
+    </header>
   );
 };
 
