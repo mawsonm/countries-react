@@ -50,7 +50,7 @@ const CountryDetails = (props) => {
     <div className="grid lg:grid-cols-2 gap-8 ">
       <img
         src={country.flags.svg}
-        className="sm:object-cover object-scale-down w-[300px] h-[200px] sm:w-[600px] sm:h-[400px]"
+        className="sm:object-cover object-fill w-[300px] h-[200px] sm:w-[600px] sm:h-[400px]"
       />
       <div className="py-8 flex flex-col justify-between items-start">
         <h2 className={`${props.theme.colors.text} text-[32px] font-bold mb-4`}>
