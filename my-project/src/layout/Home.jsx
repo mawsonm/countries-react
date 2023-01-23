@@ -27,7 +27,7 @@ const Home = (props) => {
   const filteredCountries = countries.filter(
     (country) =>
       country.region.includes(selectedRegion) &&
-      country.name.common.toLowerCase().includes(nameFilter)
+      country.name.common.toLowerCase().includes(nameFilter.toLowerCase())
   );
 
   const regions = [...new Set(countries.map((country) => country.region))];
